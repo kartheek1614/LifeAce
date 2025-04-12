@@ -3,6 +3,7 @@ import React from 'react';
 import { Search, Plus } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ToolsSection from './ToolsSection';
+import { ChevronDown } from 'lucide-react';
 
 interface ChatAreaProps {
   sidebarCollapsed: boolean;
@@ -13,7 +14,11 @@ const ChatArea: React.FC<ChatAreaProps> = ({ sidebarCollapsed }) => {
     <div className={`flex-1 h-screen flex flex-col bg-lifeace-light overflow-hidden transition-all duration-300 ${sidebarCollapsed ? 'ml-16' : 'ml-64'}`}>
       <div className="flex justify-between items-center p-4 border-b">
         <div></div>
-        <div></div> {/* Removed LIFEACE text from top-right */}
+        <div className="flex items-center gap-2">
+          <span className="text-lifeace-blue font-bold">LIFE</span>
+          <span className="text-lifeace-orange font-bold">ACE</span>
+          <ChevronDown className="h-4 w-4" />
+        </div>
       </div>
       
       <div className="flex-1 flex flex-col items-center justify-center p-6 overflow-y-auto">
