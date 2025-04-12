@@ -23,12 +23,17 @@ const ChatArea: React.FC<ChatAreaProps> = ({ sidebarCollapsed }) => {
       
       <div className="flex-1 flex flex-col items-center justify-center p-6 overflow-y-auto">
         <div className="w-full max-w-3xl flex flex-col items-center">
-          <div className="mb-6">
+          <div className="mb-2">
             <img 
               src="/lovable-uploads/fab9f198-772f-4d1c-bcc5-21cd9b3c15b0.png" 
               alt="Dhanvantri Logo" 
               className="h-20 w-auto"
             />
+          </div>
+          
+          <div className="flex items-center mb-10">
+            <span className="text-lifeace-blue font-bold text-xl">LIFE</span>
+            <span className="text-lifeace-orange font-bold text-xl">ACE</span>
           </div>
           
           <h1 className="text-2xl text-gray-600 mb-12">How can I help you today?</h1>
