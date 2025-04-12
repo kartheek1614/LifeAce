@@ -2,7 +2,7 @@
 import React from 'react';
 import { 
   Plus, 
-  Tool, 
+  Wrench, // Replacing "Tool" with "Wrench" which is available in lucide-react
   FileText, 
   Calculator, 
   MessageSquareQuote, 
@@ -51,7 +51,7 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed, toggleSidebar }) => {
         
         <div className="space-y-1">
           <div className="flex items-center gap-3 font-medium px-3 py-2">
-            <Tool className="h-4 w-4" />
+            <Wrench className="h-4 w-4" /> {/* Changed from Tool to Wrench */}
             {!collapsed && <span>My Tools</span>}
           </div>
           
