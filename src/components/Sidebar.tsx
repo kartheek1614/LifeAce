@@ -23,10 +23,22 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed, toggleSidebar }) => {
     <div className={`h-screen bg-white border-r transition-all duration-300 ${collapsed ? 'w-16' : 'w-64'}`}>
       <div className="flex items-center p-4 border-b">
         <div className="flex items-center gap-3">
-          <div className="h-6 w-6 rounded-full bg-lifeace-blue flex items-center justify-center">
-            <Plus className="h-4 w-4 text-white" />
-          </div>
-          {!collapsed && <span className="font-semibold">Dhanvantri</span>}
+          {collapsed ? (
+            <img 
+              src="/lovable-uploads/fab9f198-772f-4d1c-bcc5-21cd9b3c15b0.png" 
+              alt="Dhanvantri Logo" 
+              className="h-6 w-6"
+            />
+          ) : (
+            <div className="flex items-center gap-2">
+              <img 
+                src="/lovable-uploads/fab9f198-772f-4d1c-bcc5-21cd9b3c15b0.png" 
+                alt="Dhanvantri Logo" 
+                className="h-6 w-6"
+              />
+              <span className="font-semibold">Dhanvantri</span>
+            </div>
+          )}
         </div>
         <div className="ml-auto">
           <Button 
